@@ -19,7 +19,7 @@ jobs:
           echo "$SSH_KEY" > ~/.ssh/google.cloud.key
           chmod 600 ~/.ssh/google.cloud.key
           cat >>~/.ssh/config <<END
-          Host google-cloud
+          Host google.cloud
             HostName $SSH_HOST
             User $SSH_USER
             IdentityFile ~/.ssh/google.cloud.key
